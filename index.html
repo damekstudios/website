@@ -5,33 +5,35 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="A Solo Game Development Studio Based in Nepal">
       <link rel="shortcut icon" href="/img/logo-fav.ico" type="image/x-icon">
-      <style>
-      body {
-         margin:0;
-         padding:0;
-         overflow: hidden; 
-         background-color: #211F30;
-
-      }
-
-      .wrapper {
-         display: flex;
-         align-items: center;  
-         justify-content: center;
-         height: 100vh;
-      }
-
-      .canvas {
-         width: 1024px;
-         height: 576px;
-      }
-      </style>
+    <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <div class="wrapper">
+        <img class="logo" src="/img/logo-white.png" alt="Damek Studios Logo" onmouseover="hover(this);" onmouseout="hoverOut(this)">
          <div id="canvas" class="canvas">
             <script defer="defer" src="bundle.min.js"></script>
         </div>
-      </div>
+        <div class="footer">
+            <div class="retpoc-grp">
+                <div class="txt retpoc"><a href="/games/retpoc/index.html">Retpoc</a></div>
+                <div class="info"> - Use your brain to save our <span class="Copter">Copter</span> from Paper Airplanes.</div>
+            </div>
+            <div class="blog-grp">
+                <div class="txt blogs"><a href="https://blog.damekstudios.com">Blogs</a></div>
+                <div class="info"> - Read our Blog to master <span class="Copter">Phaser 3.60</span> and Game Dev.<div>
+            </div>
+        </div>
+
+        
+    </div>
+    <footer>&copy; Copyright 2023 @ Damek Studios</footer>
+      <script>
+         function hover(img){
+            img.src = "/img/logo-red.png"
+         }
+         function hoverOut(img){
+            img.src = "/img/logo-white.png"
+         }
+      </script>
    </body>
    </html>

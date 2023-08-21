@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #211F30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.logo {
+    width: 240px; /* Adjust the width as needed */
+    margin-top: 50px; /* Margin from the top */
+    margin-bottom: 30px;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.09);
+}
+
+/* 
+.logo:hover img {
+    content: url("/img/logo-red.png");
+} */
+
+.wrapper {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 30px;
+    width: 1000px;
+    display: flex;
+    gap: 20px;
+    align-items:self-start;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.retpoc-grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.info {
+    font-weight: 500;
+    opacity: 30%;
+}
+
+.Copter {
+    color: #fff;
+}
+.Copter:hover {
+    color: #FD3851;
+    cursor:pointer;
+}
+
+
+  .txt {
+    box-shadow: inset 0 0 0 0 #fd3852c9;
+    color: #ffffff;
+      padding: .25rem;
+      margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .txt:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #FD3851;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  footer {
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    width: 1024px;
+    opacity: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
