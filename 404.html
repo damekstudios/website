@@ -30,10 +30,10 @@
         .logo:hover {
             transform: scale(1.09);
         }
-
+/* 
         .logo:hover img {
             content: url("/img/logo-red.png");
-        }
+        } */
 
         .container {
             max-width: 400px;
@@ -73,10 +73,19 @@
     <!-- <div class="logo-container"> -->
     <!-- </div> -->
     <div class="container">
-        <img class="logo" src="/img/logo-white.png" alt="Damek Studios Logo">
+        <img class="logo" src="/img/logo-white.png" alt="Damek Studios Logo" onmouseover="hover(this);" onmouseout="hoverOut(this)">
         <div class="error-code">404</div>
         <div class="error-message">Oops! Page not found.</div>
         <a class="back-button" href="/">Go back to homepage</a>
     </div>
+
+    <script>
+        function hover(img){
+           img.src = "/img/logo-red.png"
+        }
+        function hoverOut(img){
+           img.src = "/img/logo-white.png"
+        }
+     </script>
 </body>
 </html>
