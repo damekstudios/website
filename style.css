@@ -105,6 +105,9 @@ body {
     margin-bottom: 20px;
 }
 
+.social-menu {
+    margin-bottom: 60px;
+}
 
 .social-menu ul{
     position: absolute;
