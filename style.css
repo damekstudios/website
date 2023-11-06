@@ -4,9 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #211F30;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Inter', sans-serif;
     text-align: center;
     color: #ffffff;
@@ -23,13 +20,7 @@ body {
     transform: scale(1.09);
 }
 
-/* 
-.logo:hover img {
-    content: url("/img/logo-red.png");
-} */
-
 .wrapper {
-    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
