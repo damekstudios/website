@@ -195,7 +195,7 @@ body {
   
     button {
         align-items: center;
-        background-color: #1928d2;
+        background-color: #686868;
         border-radius: 10px;
         border-style: none;
         color: #f6f7fe;
@@ -215,8 +215,8 @@ body {
     }
 
     button:hover {
-        background-color: #061080; 
-        box-shadow: 1px 1px 30px #002fff7e;
+        background-color: #FD2E48; 
+        box-shadow: 1px 1px 30px #fd2e488f;
     }
   
   .card-header.header-img {
