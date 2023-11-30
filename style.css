@@ -9,6 +9,7 @@ body {
     color: #ffffff;
 }
 
+
 .logo {
     width: 240px; /* Adjust the width as needed */
     margin-top: 50px; /* Margin from the top */
@@ -32,7 +33,7 @@ body {
     width: 1000px;
     display: flex;
     gap: 20px;
-    align-items:self-start;
+    align-items:center;
     flex-direction: column;
     font-size: 30px;
     font-weight: bold;
@@ -159,7 +160,7 @@ body {
     display: grid;
     gap: 1.5rem;
     max-width: 1000px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     align-items: center;
   }
   
@@ -192,6 +193,7 @@ body {
   .card-footer {
     padding-top: 0;
   }
+  
   
     button {
         align-items: center;
@@ -243,3 +245,36 @@ body {
     width: 70%;
     text-align: center;
   }
+
+  .games {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  @media only screen and (max-width: 1088px) {
+    #canvas {
+        display: none;
+    }
+  }
+   
+    @media only screen and (max-width: 900px) {
+      .card-container {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        gap: 2.5rem;
+      }
+    }
+
+    @media only screen and (max-width:800px) {
+      .blog-grp {
+        display: none;
+      }
+
+      .footer {
+        margin-top: 15px;
+      }
+    }
+    
+
+   
+
