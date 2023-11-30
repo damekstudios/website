@@ -60,6 +60,7 @@ body {
 
 .Copter {
     color: #fff;
+    transition: 0.4s;
 }
 .Copter:hover {
     color: #FD3851;
@@ -250,7 +251,6 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
-
 
   @media only screen and (max-width: 1088px) {
     #canvas {
