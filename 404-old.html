@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damek Studios</title>
+    <link rel="shortcut icon" href="/img/logo-fav.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #211F30;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .logo {
+            width: 240px; /* Adjust the width as needed */
+            margin-top: 50px; /* Margin from the top */
+            margin-bottom: 100px;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.09);
+        }
+/* 
+        .logo:hover img {
+            content: url("/img/logo-red.png");
+        } */
+
+        .container {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1; /* Allow the container to expand and push content to the center */
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+        }
+
+        .error-message {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+
+        .back-button {
+            margin-top: 20px; /* Adjust the margin as needed */
+            color: #ffffff;
+            text-decoration: none;
+            /* border-bottom: 1px dashed #ffffff; */
+            transition: 0.5s ease;
+        }
+
+        .back-button:hover {
+            color: #FD3851;
+            transform: scale(1.1);
+            font-weight: bold;
+        }
+
+        footer {
+            font-weight: 300;
+            font-size: 15px;
+            display: flex;
+            opacity: 50%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="logo-container"> -->
+    <!-- </div> -->
+    <div class="container">
+        <img class="logo" src="/img/logo-white.png" alt="Damek Studios Logo" onmouseover="hover(this);" onmouseout="hoverOut(this)">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! Page not found.</div>
+        <a class="back-button" href="/">Go back to homepage</a>
+    </div>
+    <footer>&copy; Copyright 2023 @ Damek Studios</footer>
+
+    <script>
+        function hover(img){
+           img.src = "/img/logo-red.png"
+        }
+        function hoverOut(img){
+           img.src = "/img/logo-white.png"
+        }
+     </script>
+</body>
+</html>
