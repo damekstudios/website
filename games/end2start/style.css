@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    /* 🌑 Dark Theme Colors */
+    --bg-color: #121212;
+    /* Dark background */
+    --text-color: #E0E0E0;
+    /* Light gray text */
+    --secondary-text: #888888;
+    /* Less prominent text */
+    --border-color: #1F1F1F;
+    /* Subtle border lines */
+
+    /* 🎯 Primary Accent */
+    --primary-color: #4CAF50;
+    /* Neon Green - Main interactive color */
+    --primary-hover: #66BB6A;
+    /* Lighter green for hover effects */
+    --primary-shadow: rgba(76, 175, 80, 0.5);
+    /* Soft glow effect */
+
+    /* ❌ Error & Warning */
+    --error-color: #FF4C4C;
+    /* Bright red for errors */
+    --warning-color: #FFA500;
+    /* Orange for warnings */
+
+    /* 🔘 UI Elements */
+    --input-bg: #1E1E1E;
+    /* Darker input field */
+    --button-bg: #222222;
+    /* Dark gray button background */
+    --button-hover: #333333;
+    /* Slightly lighter hover effect */
+
+    /* 🕒 Timer */
+    --timer-full: #4CAF50;
+    /* Green for full time */
+    --timer-mid: #FFC107;
+    /* Yellow at mid-time */
+    --timer-low: #FF4C4C;
+    /* Red when time is about to run out */
+
+    /* 🎨 Shadows & Effects */
+    --shadow-soft: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    /* Subtle depth effect */
+    --neon-glow: 0px 0px 10px var(--primary-shadow);
+}
+
+
+body {
+    font-family: 'IBM Plex Mono', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.top h1 {
+    margin: 0;
+}
+
+.top {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    outline: none;
+    background: var(--input-bg);
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    color: var(--text-color);
+    background: var(--primary-hover);
+    box-shadow: var(--neon-glow);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    width: 700px;
+}
+
+input[type="text"] {
+    width: 50%;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 500px;
+}
+
+input[type="submit"] {
+    border-left: none;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    background-color: #202020;
+    color: #28a745;
+    cursor: not-allowed;
+}
+
+.score {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#timer {
+    color: var(--timer-full);
+    transition: color 0.3s ease-in-out;
+}
+
+#timer.low-time {
+    color: var(--timer-low);
+}
+
+#timer.mid-time {
+    color: var(--timer-mid);
+}
+
+#used {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #777;
+    margin-top: 20px;
+}
+
+.used-words-list {
+    margin: 20px 20px;
+    padding: 20px;
+    border: 3px dotted #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* min-height: 50px; */
+}
+
+.used-words-list span {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.website {
+    text-decoration: none;
+    color: #383838;
+    text-shadow: 2px 2px var(--neon-glow);
+    transition: color 0.3s ease;
+}
+
+.website:hover {
+    color: var(--primary-color);
+}
+
+
+#result {
+    height: 20px;
+    margin: 0 20px;
+    padding: 10px;
+    border: 3px dotted #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #383838;
+}
+
+
+#result.success {
+    background-color: rgba(43, 255, 0, 0.13);
+    color: white;
+}
+
+#result.error {
+    background-color: rgba(255, 0, 0, 0.13);
+    color: white;
+}
+
+#result.gameover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.used-words-list span.dead-word {
+    background-color: #FF5733;
+}
+
+.gameover-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bonus-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    /* Green for positive effect */
+    opacity: 1;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    pointer-events: none;
+    /* Ignore clicks */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* .top {
+        align-items: center;
+    } */
+
+    form {
+        width: auto;
+        margin: 20px;
+    }
+}

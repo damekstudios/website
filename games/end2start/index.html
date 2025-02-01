@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>end2start</title>
+
+    <meta property="og:url" content="https://damekstudios.com/games/end2start">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="end2start">
+    <meta property="og:description"
+        content="Enter words starting with the previous word’s last letter to score points!">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/damekstudios/website/main/games/end2start/img/og-banner.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="damekstudios.com">
+    <meta property="twitter:url" content="https://damekstudios.com/games/end2start">
+    <meta name="twitter:title" content="end2start">
+    <meta name="twitter:description"
+        content="Enter words starting with the previous word’s last letter to score points!">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/damekstudios/website/main/games/end2start/img/og-banner.png">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="top">
+        <h1>end2start</h1>
+        <div class="score"> score: <span id="score">0</span> | ⏳ Time: <span id="timer">10</span>
+        </div>
+    </div>
+
+    <div class="game">
+        <form action="" id="form">
+            <input type="text" id="wordInput" placeholder="Enter a word" disabled
+                style="border-radius: 20px 0px 0px 20px;">
+            <input onclick="checkWord()" type="submit" value="Enter" disabled>
+        </form>
+
+
+        <div id="used" class="used-words-list">
+            ⛔ Used Words ⛔
+        </div>
+
+
+    </div>
+
+    <div id="result" class="">
+        Enter words starting with the previous word’s last letter to score points!
+    </div>
+
+    <footer>
+        MADE BY <a class="website" href="https://games.damekstudios.com" target="_blank"> DAMEK STUDIOS</a> &copy;
+        <script>document.write(new Date().getFullYear())</script>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
